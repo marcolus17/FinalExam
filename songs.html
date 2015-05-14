@@ -1,0 +1,38 @@
+<!-- 
+	songs.html
+  	Author: Nick Markworth
+  	Form that collects favorite popular songs
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title> Final Exam | Songs Form </title>
+		<script src="songs_init.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="main.css" />
+	</head>
+	<body>
+		<h2> Your Favorite Songs </h2>
+
+		<p> Submit the following information to report your favorite song: </p>
+
+		<form method="post" action="songs_insert.php"> <!-- songs_insert.php -->
+			<label> Song name: <br />
+			<input type="text" id="songName" name="songName" size="35" maxLength="40" /> </label> <br />
+
+			<label> Artist: <br />
+			<input type="text" id="artist" name="artist" size="35" maxLength="40" /> </label> <br />
+
+			<label> Composer: (if unknown, type in Artist again)<br />
+			<input type="text" id="composer" name="composer" size="35" maxLength="40" /> </label> <br />
+
+			<br />
+			<input type="submit" value="Submit" id="submit" name="submit" />
+		</form>
+		
+		<p> <a id="list" href="songs_list.php"> Go to list of songs </a> </p>
+		
+		<!-- Register form fields and event handlers --!>
+		<script src="songs_register.js" type="text/javascript"></script>
+	</body>
+</html>
